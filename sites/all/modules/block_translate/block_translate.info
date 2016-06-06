@@ -1,0 +1,11 @@
+name = Block Translate
+description = Add editor options in block translate		
+core = 7.x
+dependencies[] = block
+
+
+version = "7.x-2.2"
+core = "7.x"
+project = "blocktranslate"
+
+

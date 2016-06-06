@@ -1,0 +1,439 @@
+@media screen and (max-width:1160px)
+{
+	#block-system-main-menu .content a
+	{
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width:1081px)
+{
+	#block-system-main-menu
+	{
+		display: block!important;
+	}
+}
+
+@media screen and (max-width:1080px)
+{
+	#mobile-button
+	{
+		display: block;
+		width: 30px;
+		position: absolute;
+		right: 30px;
+		top: 25px;
+
+		a
+		{
+			color: transparent;
+			font-size: 0px;
+			display: block;
+			height: 30px;
+			width: 30px;
+			background: url(../images/menu-icon.png) no-repeat;
+		}
+	}
+
+	.view-practice-areas 
+	{	
+		.views-field-nothing,
+		.views-field-field-image-practice
+		{
+			width: auto;
+			float: none;
+			height: auto;
+		
+		}
+
+		.backbg 
+		{
+			height: 300px;
+			background-position: center top;
+		}
+
+		.views-field-nothing .field-content
+		{
+			padding: 50px 10px 50px 10px;
+			max-width: inherit;
+
+			&:after
+			{
+				display: none;
+			}
+		}
+
+		.views-row:nth-child(even)
+		{
+			.views-field-nothing
+			{
+				float: none;
+			}
+		}
+	}
+
+	#content
+	{
+		.view-team-bio .view-content
+		{
+			padding: 0 10px;
+		}
+	}
+
+	#block-menu-menu-footer-menu
+	{
+		padding: 30px 10px 70px;
+	}
+
+	#vertical-line,
+	#block-block-1 .content:after
+	{
+		display: none;
+	}
+
+	#navigation 
+	{	
+		z-index: 1;
+		.region-navigation
+		{
+			float: right;
+		}
+		
+	}
+
+	#logo
+	{
+		z-index: 1;
+	}
+
+	#block-locale-language
+	{
+		float: none;
+		overflow: hidden;
+		margin-right: 40px;
+		z-index: 1;
+	}
+
+	#block-menu-menu-social-menu
+	{
+		display: none;
+	}
+
+	#block-system-main-menu
+	{
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0px;
+		padding-top: 100px;
+		background: white;
+		width: 100%;
+
+		.content 
+		{	
+			&>ul.menu
+			{
+				border-top: 1px solid #e6e6e6;
+			}
+
+			a
+			{
+				border-bottom: 1px solid #e6e6e6;
+				padding: 25px 0px;
+			}
+			
+		}
+
+		ul.menu
+		{	
+			text-align: center;
+			float: none;
+		}
+
+		#mobile-social
+		{
+			display: block;
+			text-align: center;
+			padding: 25px 0px;
+
+			a
+			{
+				border-bottom: 0px;
+
+				&:hover:after
+				{
+					display: none;
+				}
+			}
+
+			li
+			{
+				display: inline-block;
+				background-position: center;
+			}
+		}
+
+		li
+		{
+			float: none;
+		}
+	}
+}
+
+@media screen and (max-width:960px)
+{
+	.view-front-blog .views-field-nothing
+	{
+		span:first-child + span
+		{
+			font-size: 1.5em;
+		}
+	}
+
+	#block-block-2,
+	#block-block-3
+	{
+		float: none;
+		width: 100%;
+	}
+
+	#block-block-3
+	{
+		border-top: 1px solid #fff;
+	}
+
+	#block-block-3:before
+	{
+		display: none;
+	}
+
+	.node-blog
+	{
+		.field-name-field-header-image
+		{
+			width: 100%;
+
+			img
+			{	
+				width: 100%;
+				height: auto;
+			}
+		
+		}
+	}
+
+	.view-team
+	{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:767px)
+{
+	#block-menu-menu-footer-menu
+	{
+		display: none;
+	}
+
+	#content .view-practice-areas .views-row h2
+	{
+		font-size: 1.7em;
+	}
+
+	.info-blocks > div .career-button
+	{
+		float: none;
+	}
+
+	#content #blog-nav
+	{	
+		.prev,
+		.next
+		{
+			font-size: 0px;
+			color: transparent;
+		    width: 30px;
+		  	height: 20px;
+		}
+
+		.prev + a
+		{
+			display: inline-block;
+		}
+	}
+
+	.view-team
+	{	
+		.views-row
+		{
+			padding: 50px 10px;
+		}
+	}
+
+	#map-toronto, #map-montreal
+	{
+		width: auto;
+		float: none;
+	}
+
+	#article-by,
+	#social-block
+	{
+		width: 100%;
+		height: auto;
+		margin-bottom: 0px;
+		padding: 20px 0px;
+
+		div p
+		{
+			font-size: 1.5em;
+		}
+	}
+
+	#article-by
+	{
+		border-right: 0px;
+	}
+
+	#block-block-3,
+	#block-block-2,
+	#block-block-7,
+	#block-block-8
+	{	
+		.content
+		{
+			padding-left: 10px;
+		}
+	}
+
+	.view-front-blog 
+	{	
+
+		.views-field-field-header-image,
+		.views-field-nothing 
+		{
+			height: 190px;
+		}
+
+		.views-field-nothing 
+		{
+			a
+			{
+				padding: 10px 10px;
+				height: 180px;
+				line-height: 1em;
+
+				&:after
+				{
+					top: 40%;
+				}
+			}
+
+			span
+			{
+				position: relative;
+				z-index: 1;
+				font-size: 0.9em;
+				padding-bottom: 0.6em;
+			}
+
+			span:first-child + span 
+			{
+				font-size: 1.2em;
+			}
+
+		}
+
+		.backbg
+		{
+			height: 190px;
+		}
+	}
+
+	#header
+	{
+		height: 500px;
+	}
+
+	#navigation > div
+	{
+		padding: 20px 10px;
+	}
+
+	#logo
+	{
+		width: 124px;
+
+		img
+		{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	#block-locale-language
+	{
+		margin-right: 40px;
+	}
+
+	#mobile-button
+	{
+		right: 10px;
+	}
+
+	#copyright, #site-by-cci
+	{
+		bottom: 30px;
+		padding-top: 20px;
+	}
+
+	#block-block-3,
+	#block-block-2
+	{	
+		.info-button
+		{
+			position: relative;
+			float: none;
+			right: auto;
+			margin-top: 35px;
+		}
+	}
+
+	#copyright
+	{
+		left: 10px;
+	}
+
+	#site-by-cci
+	{
+		float: right;
+		right: 10px;
+	}
+
+	#block-menu-menu-social-menu-footer
+	{
+		padding-bottom: 60px;
+	}
+
+	.info-blocks
+	{
+		width: auto;
+		display: block;
+	}
+
+	#block-block-7,
+	#block-block-8
+	{
+		float: none;
+		width: auto;
+
+	}
+
+	#block-block-8
+	{
+		&:before
+		{
+			display: none;
+		}
+	}
+}

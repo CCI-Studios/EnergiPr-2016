@@ -1,0 +1,406 @@
+#block-block-1
+{
+	top: 55%;
+	text-align: center;
+	font-size: 1.8em;
+	color: $orange;
+	margin: 0 40px;	
+	overflow:hidden;
+	position: relative;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	img
+	{
+		padding-bottom: 20px;
+		width: 100%;
+		height: auto;
+	}
+
+	.content
+	{
+		position: relative;
+		max-width: 522px;
+		margin: 0 auto;
+	}
+
+
+	.front &
+	{
+		.content:after
+		{
+			content: "";
+			height: 7px;
+			width: 0px;
+			background: #8c9b93;
+			position: absolute;
+			top: 56px;
+			left: 100%;
+		}
+	}
+}
+
+#block-block-4,
+#block-block-22,
+#block-block-10,
+#block-block-17,
+#block-views-services-block
+{
+	@extend .layout;
+
+	h2
+	{
+		font-size: 3em;
+	}
+}
+
+.front #vertical-line
+{
+ 	height: 0px;
+	position: absolute;
+	top: 266px;
+	right: 40px;
+	z-index: 9;
+}
+
+.front.navbar-vertical
+{
+	#vertical-line
+	{
+		top: 300px;
+	}
+}
+
+.front .grey-section-1
+{	
+	position: relative;
+
+	&:after
+	{	
+		content: "";
+		right: -15px;
+		bottom: -12px;
+		@extend .circle;
+	}
+}
+
+.change-color-white
+{
+	#vertical-line
+	{
+		
+		&:after
+		{
+			background: white;
+		}
+	}
+}
+
+.front #block-block-1 .content:after
+{
+	padding-right: 100%;
+	transition: width 1s;
+}
+
+#block-locale-language
+{	
+	li
+	{
+		&:first-child
+		{
+			border-right:2px solid $orange;
+		}
+
+		a
+		{
+			line-height:1.2em;
+			color: $grey;
+		}
+
+		a.active
+		{
+			color:$orange;
+		}
+	}
+}
+
+#block-block-2,
+#block-block-15,
+#block-block-3,
+#block-block-16,
+#block-block-7,
+#block-block-19,
+#block-block-8,
+#block-block-20
+{	
+	width: 50%;
+	float: left;
+	padding: 50px 0px 55px;
+	color: white;
+
+	a
+	{
+		color: white;
+		text-decoration: none;
+	}
+
+	p
+	{
+		position: relative;
+	}
+
+	h3
+	{
+		color: white;
+		font-size: 1.4em
+	}
+
+	h2
+	{	
+		color: white;
+		font-size: 2em;
+		padding-bottom: 20px;
+
+		&+p
+		{
+			padding:10px 0px;
+		}
+	}
+
+	strong
+	{
+		color: white;
+	}
+
+	.content
+	{
+		padding-left: 50px;
+	}
+
+	.info-button
+	{
+		float: right;
+		position: absolute;
+		bottom: 0px;
+		right: 20px;
+
+		&:hover
+		{	
+			color: $orange;
+			background: white;
+		}
+	}
+
+	.phone
+	{
+		padding-top: 20px;
+	}
+}
+
+.info-blocks
+{
+	width: 47%;
+	display: inline-block;
+	padding-right: 20px;
+	vertical-align: top;
+
+	.info-button
+	{
+		#content &
+		{
+			color: $orange;
+
+			&:hover
+			{
+				text-decoration: none;
+				color: white;
+			}
+		}
+
+		border-color: $orange;
+
+		&:hover
+		{
+			background: $orange;
+		}
+	}
+
+	&>div
+	{	
+		padding-top: 45px;
+		p
+		{
+			float: left;
+		}
+
+		.career-button
+		{
+			float: right;
+		}
+	}
+}
+
+.info-button
+{
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#block-block-7,
+#block-block-19,
+#block-block-8,
+#block-block-20
+{	
+	
+	.content > div
+	{
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 20px;
+
+		div
+		{
+			padding-bottom: 20px;
+		}
+
+		label
+		{
+			display: inline-block;
+			padding-right: 20px;
+			font-weight: normal;
+		}
+	}
+
+}
+
+#block-block-2,
+#block-block-15,
+#block-block-3,
+#block-block-16
+{
+	.content
+	{
+		max-width: 480px;
+	}
+}
+
+#block-block-8:before,
+#block-block-3:before,
+#block-block-16:before
+{
+	content: "";
+	border-right: 1px solid white;
+	height: 100%;
+	display: block;
+	position: absolute;	
+	top: 0px;
+	left: 0;
+}
+
+#block-block-2,
+#block-block-15,
+#block-block-7,
+#block-block-19
+{
+	background-color: $orange;
+}
+
+#block-block-3,
+#block-block-16,
+#block-block-8,
+#block-block-20
+{
+	background-color: $grey;
+	position: relative;
+
+	.info-button:hover
+	{
+		color: $grey;
+	}
+}
+
+#map-toronto,
+#map-montreal
+{
+	float: left;
+	width: 50%;
+	height: 330px;
+}
+
+#map-toronto
+{
+	border-bottom: 2px solid $orange;
+}
+
+#map-montreal
+{
+	border-bottom: 2px solid $grey;
+}
+
+.page-node-20
+{
+	#page-title
+	{
+		display: none;
+	}
+}
+
+#footer
+{
+	.blockgroup
+	{	
+		overflow: hidden;
+		background-color: $orange;
+	}
+}
+
+#block-block-11,
+#block-views-team-block,
+#block-block-12,
+#block-block-13,
+#block-block-14
+{
+	background: white;
+
+	p
+	{
+		color: $grey;
+	}
+
+	.content,
+	h2
+	{	
+		@extend .layout;
+	}
+}
+
+#block-block-11,
+#block-block-12,
+#block-block-13,
+#block-block-14
+{
+	.content
+	{
+		padding-top: 0px;
+	}
+
+	img
+	{
+		padding: 40px 40px 0px 0px;
+		vertical-align: middle;
+	}
+}
+
+#block-views-team-block
+{
+	background: #f0f3f2;
+}

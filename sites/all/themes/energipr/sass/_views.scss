@@ -1,0 +1,492 @@
+.view-clients-logos
+{
+	.view-content
+	{
+		@extend .layout;
+		text-align: center;
+		padding: 50px 0px 0px;
+
+		.views-row
+		{
+			display: inline-block;
+			min-width: 180px;
+			padding-bottom: 50px;
+		}
+
+		.views-field-title a
+		{	
+			#content &
+			{
+				color: $grey;
+			}
+
+			text-decoration: none;
+		}
+	}
+}
+
+.view-practice-areas,
+.view-front-blog
+{
+	.views-row:nth-child(even)
+	{
+		.views-field-nothing
+		{
+			float: right;
+
+			&:after,
+			a:after
+			{
+				left:-15px;
+				right:auto;
+			}
+		}
+	}
+
+	.views-field-nothing
+	{
+		&:after,
+		a:after
+		{	
+			top: 50%;
+			position: absolute;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			
+		}
+	}
+
+	.views-field-nothing,
+	.views-field-field-header-image,
+	.views-field-field-image-practice
+	{	
+		width: 50%;
+		float: left;
+	}
+
+	.circleblog
+	{
+		right: -15px;
+		bottom: auto;
+		background-color: $orange;
+		@extend .circle;
+	}
+}
+
+.view-practice-areas
+{	
+	.views-row
+	{
+		background-color: $orange;
+		overflow: hidden;
+
+		h2
+		{	
+			text-transform: uppercase;
+			font-weight: normal;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+			#content &
+			{
+				text-transform: uppercase;
+				line-height: 0.9em;
+			}
+		}
+
+		h2,p
+		{	
+			#content &
+			{
+				color: white;
+			}
+		}
+	}
+
+	.backbg
+	{
+		height: 500px;
+		background-position: center left;
+	}
+
+	.views-field-nothing
+	{	
+		position: relative;
+		height: 500px;
+
+		&:after
+		{
+			content:"";
+			width: 30px;
+			height: 30px;
+			@extend .circleblog;
+		}
+
+		.field-content
+		{
+			padding: 50px 0px 0px 50px;
+			display: block;
+			max-width: 480px;
+		}
+	}
+}
+
+.view-front-blog
+{	
+	.views-row
+	{
+		overflow:hidden;
+	}
+
+	.backbg
+	{
+		height: 250px;
+	}
+
+	@at-root .page-blog
+	{
+		.view-front-blog .attachment
+		{
+			display: none;
+		}
+	}
+
+	.pager
+	{	
+		padding: 40px 0px;
+		margin-bottom: 0px;
+
+		li
+		{
+			color: $grey;
+		}
+	}
+
+	.attachment
+	{
+		padding: 50px;
+		text-align: center;
+		font-size: 1.2em;
+
+		a
+		{	
+			#content &
+			{
+				color: $grey;
+				text-transform: lowercase;
+			}
+
+			position: relative;
+		}
+	}
+
+	.views-field-nothing
+	{	
+		a
+		{
+			display: block;
+			padding: 0px 50px;
+			height: 250px;
+			vertical-align: middle;
+			line-height: 1.7em;
+			text-decoration: none;
+			color: white;
+			position: relative;
+			background-color: $orange;
+			color: white!important;
+			text-decoration:none!important;
+
+			&:after
+			{
+				content:"";
+				width: 30px;
+				height: 30px;
+				@extend .circleblog;
+			}
+
+			&>div
+			{
+				top: 50%;
+				position: relative;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				z-index: 1;
+			}
+
+			&:hover
+			{
+				background: $grey;
+			}
+
+			&:hover:after
+			{
+				background-color: $grey;
+			}
+		}
+
+		span
+		{
+			display: table;
+			width: calc(100% + 1px);
+			font-size: 1em;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+
+		span:first-child + span
+		{
+			font-size: 1.8em;
+			max-width: 450px;
+			text-transform: uppercase;
+		}
+	}
+
+	.views-field-nothing,
+	.views-field-field-header-image
+	{	
+	
+		height: 250px;
+	}
+
+}
+
+.view-services
+{	
+	overflow: hidden;
+
+	.views-field-title
+	{
+		font-weight: bold;
+		font-size: 22px;
+		color: $grey;
+		cursor: pointer;
+
+		&:before
+		{
+			content: "";
+			position: absolute;
+			display: inline-block;
+			height: 10px;
+			width: 10px;
+			border-radius: 20px;
+			margin: 10px 0px;
+			background: $orange;
+		}
+
+		.field-content
+		{
+			padding-left: 20px;
+		}
+	}
+
+	.views-row
+	{
+		padding-bottom: 20px;
+		position: relative;
+	}
+
+	.views-field-body
+	{
+		display: none;
+		padding-left: 20px;
+	}
+
+	.block-group-services
+	{
+		float: left;		
+		width: 300px;
+	}
+}
+
+.view-team
+{
+	.views-field-body
+ 	{
+	 	display: none;
+ 	}
+ 	.views-row 
+	{	
+
+		display: inline-block;
+		padding: 50px 35px;
+		text-align: center;
+		width: 230px;
+		vertical-align: middle;
+
+		.field-content > a
+		{
+			display: block;
+			position: relative;
+		}
+
+		.person-name
+		{
+			color: $orange;
+			text-transform: lowercase;
+			padding-bottom: 10px;
+			font-size: 1.4em;
+
+			&+span
+			{
+				color: $grey;
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+
+		span
+		{
+			display: block;
+			font-weight: bold;
+			position: relative;
+			
+		}
+
+		span img 
+		{
+		  max-width: 100%;
+		  margin-bottom: -5px;
+		  -moz-transition: all 0.3s;
+		  -webkit-transition: all 0.3s;
+		  transition: all 0.3s;
+		}
+	}
+}
+
+.view-team .views-row .field-content a >span,
+.view-team-bio .member-image
+{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.view-team-bio
+{
+	display: none;
+	position: relative;
+	text-align: center;
+	padding: 100px 0px;
+
+	@extend .layout;
+
+	.views-row
+	{
+		display: none;
+	}
+
+	.member-position
+	{
+		display: block;
+	}
+
+	.view-header
+	{
+		position: absolute;
+		top: 50px;
+		right: 0px;
+	}
+
+	.view-content,
+	.member-bio p
+	{	
+		#content &
+		{
+			color: white;
+		}
+	}
+
+	.title
+	{
+		text-transform: lowercase;
+		font-weight: bold;
+		font-size: 1.4em;
+		padding-bottom: 10px;
+	}
+
+	.member-bio
+	{
+		padding: 50px 0px;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin-top: 50px;
+	}
+
+	.close
+	{
+		font-size: 0px;
+		color: transparent;
+		background: url(../images/close.png) no-repeat;
+		height: 50px;
+		width: 50px;
+		display: block;
+	}
+}
+
+.view-careers
+{
+	.views-field
+	{
+		padding-bottom: 10px;
+	}
+
+	.views-row
+	{
+		margin-bottom: 20px;
+	}
+
+	.views-field-title
+	{
+		color: $orange;
+	}
+
+	.views-field-nothing
+	{
+		display: none;
+	}
+
+	.views-field-nothing-1.open
+	{
+		.more-details
+		{
+			display: none;
+		}
+
+		.hide-details
+		{
+			display: block;
+		}
+	}
+
+	.views-label
+	{
+		font-weight: bold;
+	}
+
+	.info-button
+	{
+		display: inline-block;
+		max-width: 170px;
+		text-align: center;
+
+		#content &
+		{
+			color: $orange;
+
+			&:hover
+			{
+				text-decoration: none;
+				color: white;
+				background: $orange;
+			}
+		}
+	}
+
+	.hide-details
+	{
+		display: none;
+	}
+}
