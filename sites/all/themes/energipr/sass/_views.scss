@@ -9,18 +9,45 @@
 		.views-row
 		{
 			display: inline-block;
-			min-width: 180px;
-			padding-bottom: 50px;
+			width: 150px;
+			position: relative;
+			padding: 0px 10px 50px;
+			margin-bottom: 50px;
 		}
 
-		.views-field-title a
+		.views-field-title 
 		{	
-			#content &
+			padding-top: 20px;
+			position: absolute;
+			width: 90%;
+			text-align: center;
+
+			a
+			{	
+				text-decoration: none;
+				display: block;
+
+				#content &
+				{
+					color: $orange;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.views-field-field-logo
+		{
+			a
 			{
-				color: $grey;
+				display: block;
+				width: 150px;
 			}
 
-			text-decoration: none;
+			img
+			{
+				max-width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
@@ -94,7 +121,7 @@
 			}
 		}
 
-		h2,p
+		h2,p,strong
 		{	
 			#content &
 			{
@@ -260,41 +287,47 @@
 		font-size: 22px;
 		color: $grey;
 		cursor: pointer;
+		vertical-align: top;
+	}
 
-		&:before
+	.views-field-body
+	{	
+		padding-right: 20px;
+		li
+		{
+			list-style: none;
+			position: relative;
+			padding-left: 20px;
+			padding-bottom: 10px;
+		}
+
+		li:before
 		{
 			content: "";
 			position: absolute;
 			display: inline-block;
 			height: 10px;
 			width: 10px;
+			left: 0px;
+			top: 0px;
 			border-radius: 20px;
-			margin: 10px 0px;
+		    margin: 6px 0px;
 			background: $orange;
-		}
-
-		.field-content
-		{
-			padding-left: 20px;
 		}
 	}
 
 	.views-row
-	{
+	{	
+		display: inline-block;
+		width: 32.20%;
 		padding-bottom: 20px;
 		position: relative;
+		vertical-align: top;
 	}
 
-	.views-field-body
+	.views-field-title
 	{
-		display: none;
-		padding-left: 20px;
-	}
-
-	.block-group-services
-	{
-		float: left;		
-		width: 300px;
+		padding-bottom: 20px;
 	}
 }
 
@@ -351,6 +384,11 @@
 		  transition: all 0.3s;
 		}
 	}
+}
+
+#block-views-team-bio-block
+{
+	background: $orange;
 }
 
 .view-team .views-row .field-content a >span,

@@ -17,7 +17,7 @@
 		    });
 		}
 	 	
-		$(window).scroll(function()
+		/*$(window).scroll(function()
 		{	
 
 			bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -32,7 +32,7 @@
 		    	$('#navigation').removeClass('fixed');
 		    }
 			
-		});
+		});*/
 	}
 
 }(jQuery));

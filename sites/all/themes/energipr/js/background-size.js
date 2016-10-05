@@ -26,7 +26,6 @@
         var img = $(this).find('img');
         var imgSrc = img.attr('src');
         var div = $(this).find('div');
-        console.log(img.attr('src'));
         img.remove();
         div.html('<div class="backbg"></div>');
         $(this).find('.backbg').css('background-image', 'url(' + imgSrc + ')');

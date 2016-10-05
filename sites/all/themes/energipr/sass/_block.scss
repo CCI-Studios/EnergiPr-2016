@@ -27,7 +27,7 @@
 	}
 
 
-	.front &
+	/*.front &
 	{
 		.content:after
 		{
@@ -39,7 +39,7 @@
 			top: 56px;
 			left: 100%;
 		}
-	}
+	}*/
 }
 
 #block-block-4,
@@ -77,13 +77,13 @@
 {	
 	position: relative;
 
-	&:after
+	/*&:after
 	{	
 		content: "";
 		right: -15px;
 		bottom: -12px;
 		@extend .circle;
-	}
+	}*/
 }
 
 .change-color-white
@@ -377,9 +377,14 @@
 	}
 
 	.content,
-	h2
+	&.block > h2
 	{	
 		@extend .layout;
+	}
+
+	&.block > h2
+	{
+		padding-bottom: 20px;
 	}
 }
 
@@ -397,6 +402,16 @@
 	{
 		padding: 40px 40px 0px 0px;
 		vertical-align: middle;
+	}
+}
+
+#block-block-11
+{
+	background: $orange;
+
+	p,strong,h1,h2,h3,h4
+	{
+		color: white;
 	}
 }
 

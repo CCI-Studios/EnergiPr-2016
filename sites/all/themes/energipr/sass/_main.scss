@@ -13,6 +13,12 @@ body
 	position: relative;
 }
 
+.backbg
+{
+	height: 670px;
+	background-size: cover;
+}
+
 #navigation
 {	
 	position: absolute;
@@ -414,7 +420,6 @@ strong
 		{
 			display: block;
 			color:$orange;
-			text-transform: uppercase;
 			-webkit-font-smoothing: antialiased;
 			text-decoration: none;
 		}
@@ -538,7 +543,7 @@ strong
 		a
 		{
 			padding:10px 0px 0px;
-			font-size: 20px;
+			font-size: 18px;
 			position: relative;
 
 			&:hover
@@ -700,26 +705,14 @@ body.down #navigation.animateIt {
 {	
 	#page-title
 	{
-		color: white;
 		@extend .layout;
 		padding-bottom: 20px;
-		font-size: 2.3em;
 	}
-
- 	#content
- 	{
-	 	background: $orange;
- 	}
 
 	#block-system-main
 	{
 		@extend .layout;
 		padding-top: 0px;
-
-	 	p,h1,h2,h2,h3,h4
-	 	{
-	 		color: white;
-	 	}
 	}
 }
 
@@ -784,5 +777,10 @@ ul.inline li.translation_en
 		padding: 150px 0px 100px;
 		max-width: 550px;
 		margin: 0 auto;
+	}
+
+	.field-name-field-header-image
+	{
+		display: none;
 	}
 }
