@@ -518,6 +518,10 @@ function energipr_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'services';
   $export['services'] = $view;
 
   $view = new view();
