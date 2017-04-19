@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the energipr feature.
+ */
+
+include_once 'energipr.features.inc';
