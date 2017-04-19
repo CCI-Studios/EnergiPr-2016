@@ -327,7 +327,8 @@
 			{
 				padding: 10px 10px;
 				height: 180px;
-				line-height: 1em;
+				font-size: 0.9em;
+				line-height: 1;
 
 				&:after
 				{
@@ -335,15 +336,7 @@
 				}
 			}
 
-			span
-			{
-				position: relative;
-				z-index: 1;
-				font-size: 0.9em;
-				padding-bottom: 0.6em;
-			}
-
-			span:first-child + span 
+			.title
 			{
 				font-size: 1.2em;
 			}

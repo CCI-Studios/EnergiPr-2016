@@ -57,23 +57,25 @@ strong
 	color: $orange;
 }
 
-.date-created,
-.author-top
+.node-blog
 {
-	color:$grey;
-	font-size: 1.3em;
-}
+  .date-created,
+  .author-top
+  {
+  	color:$grey;
+  	font-size: 1.3em;
+  }
 
-.author-top
-{
-	padding-bottom: 30px;
-}
+  .author-top
+  {
+  	padding-bottom: 30px;
+  }
 
-.author
-{
-	padding-top: 20px;
+  .author
+  {
+  	padding-top: 20px;
+  }
 }
-
 
 #blog-nav,
 .view-front-blog

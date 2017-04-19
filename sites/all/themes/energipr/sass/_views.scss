@@ -222,6 +222,7 @@
 			background-color: $orange;
 			color: white!important;
 			text-decoration:none!important;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
 			&:after
 			{
@@ -252,15 +253,7 @@
 			}
 		}
 
-		span
-		{
-			display: table;
-			width: calc(100% + 1px);
-			font-size: 1em;
-			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-		}
-
-		span:first-child + span
+		.title
 		{
 			font-size: 1.8em;
 			max-width: 450px;

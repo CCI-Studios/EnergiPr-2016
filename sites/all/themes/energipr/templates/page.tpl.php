@@ -103,13 +103,6 @@
         <a id="main-content"></a>
 
         <?php print render($title_prefix); ?>
-        <?php if (isset($node) && $node->type=="blog"): ?>
-          <div class="date-created">  
-             <span class="month"><?php echo date("M", $node->created); ?></span>
-             <span class="day"><?php  echo date("j", $node->created); ?></span>,
-             <span class="year"><?php echo date("Y", $node->created); ?></span>
-          </div>
-        <?php endif; ?>
         <?php if ($title && !(isset($node) && $node->type=='blog')){ ?>
         <h1 class="title" id="page-title"><?php print $title; ?>
         </h1><?php } ?>
