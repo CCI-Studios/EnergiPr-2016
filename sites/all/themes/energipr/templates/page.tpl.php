@@ -79,7 +79,7 @@
       <div>
           <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            <img src="<?php print $base_path.drupal_get_path('theme', 'energipr'); ?>/images/logo_<?php print $language->language; ?>.svg" alt="<?php print t('Home'); ?>" />
           </a>
           <?php endif; ?>
           <?php print render($page['navigation']);?>

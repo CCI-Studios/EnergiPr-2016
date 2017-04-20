@@ -11,6 +11,13 @@ body
 {
 	float:left;
 	position: relative;
+  
+  img
+  {
+    display: block;
+    width: auto;
+    height: 60px;
+  }
 }
 
 .backbg
