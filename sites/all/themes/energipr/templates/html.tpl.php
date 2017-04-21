@@ -52,7 +52,7 @@
   <?php print $scripts; ?>
   <script src="https://use.typekit.net/wqt7jri.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCjOTQPFx8Wd4iNY1jVsNHI2wQlwZZ1VRc"></script>
   <div id="fb-root"></div>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
