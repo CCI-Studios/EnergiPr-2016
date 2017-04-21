@@ -64,7 +64,7 @@ function energipr_image_default_styles() {
 function energipr_node_info() {
   $items = array(
     'blog' => array(
-      'name' => t('Blog'),
+      'name' => t('News'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
