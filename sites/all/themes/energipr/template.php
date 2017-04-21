@@ -2,16 +2,8 @@
 <?php 
 function energipr_views_pre_render(&$view) {
   if($view->name == 'front_blog') {
-  	global $language;
-  	if ($language->language=='fr'){
-	 	$content = '<a href="/fr/blog">View more blog posts</a>';
-	    $view->attachment_after = $content;
-  	 }
-  	 else
-  	 {
-  	 	$content = '<a href="/blog">View more blog posts</a>';
-	    $view->attachment_after = $content;
-  	 }
+    global $language;
+    $view->attachment_after = l(t("View more news"),"news",array('language' => $language));
   }
 }
 
