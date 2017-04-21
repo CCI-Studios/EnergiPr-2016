@@ -29,7 +29,6 @@
             else
             {   
                 var $div = $('#map-toronto,#map-montreal');
-                console.log($div);
                 $('#block-block-9 .content').append($div);
             }
         }
