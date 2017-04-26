@@ -1,10 +1,9 @@
 #block-block-1
 {
 	top: 55%;
-	text-align: center;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: $orange;
-	margin: 0 40px;	
+	margin: 0 40px;
 	overflow:hidden;
 	position: relative;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
@@ -22,8 +21,13 @@
 	.content
 	{
 		position: relative;
-		max-width: 522px;
+		max-width: 930px;
 		margin: 0 auto;
+		
+		& > div
+		{
+			max-width: 400px;
+		}
 	}
 
 
