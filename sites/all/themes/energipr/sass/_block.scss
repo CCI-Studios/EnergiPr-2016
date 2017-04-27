@@ -21,13 +21,9 @@
 	.content
 	{
 		position: relative;
-		max-width: 930px;
+		max-width: 400px;
 		margin: 0 auto;
-		
-		& > div
-		{
-			max-width: 400px;
-		}
+		text-align: center;
 	}
 
 
