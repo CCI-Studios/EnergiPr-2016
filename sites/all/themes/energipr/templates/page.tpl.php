@@ -103,7 +103,7 @@
         <a id="main-content"></a>
 
         <?php print render($title_prefix); ?>
-        <?php if ($title && !(isset($node) && $node->type=='blog')){ ?>
+        <?php if ($title && !$is_front && !(isset($node) && $node->type=='blog')){ ?>
         <h1 class="title" id="page-title"><?php print $title; ?>
         </h1><?php } ?>
         <?php print render($title_suffix); ?>
