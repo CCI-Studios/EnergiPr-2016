@@ -125,17 +125,6 @@ strong
 }
 
 
-.node-type-blog
-{
-	#page-title
-	{
-		text-transform: uppercase;
-		font-weight: normal;
-		line-height: 1em;
-	}
-}
-
-
 #blog-nav
 {	
 	clear: both;
@@ -789,6 +778,7 @@ ul.inline li.translation_en
 		padding: 150px 0px 100px;
 		max-width: 550px;
 		margin: 0 auto;
+		line-height: 1em;
 	}
 
 	.field-name-field-header-image
