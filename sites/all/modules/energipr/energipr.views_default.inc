@@ -257,7 +257,7 @@ function energipr_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Putting the limelight on you';
+  $handler->display->display_options['title'] = 'Our clients';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '';
@@ -333,7 +333,7 @@ function energipr_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Content: Header Image */
+  /* Field: Field: Header Image */
   $handler->display->display_options['fields']['field_header_image']['id'] = 'field_header_image';
   $handler->display->display_options['fields']['field_header_image']['table'] = 'field_data_field_header_image';
   $handler->display->display_options['fields']['field_header_image']['field'] = 'field_header_image';

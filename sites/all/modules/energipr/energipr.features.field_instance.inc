@@ -10,6 +10,63 @@
 function energipr_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'bean-header_image-field_header_image'.
+  $field_instances['bean-header_image-field_header_image'] = array(
+    'bundle' => 'header_image',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image_url_formatter',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'blog_header_image',
+          'url_type' => 1,
+        ),
+        'type' => 'image_url',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_header_image',
+    'label' => 'Header Image',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'large',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-blog-body'.
   $field_instances['node-blog-body'] = array(
     'bundle' => 'blog',
