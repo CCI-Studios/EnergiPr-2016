@@ -1,4 +1,4 @@
-#block-block-1
+.block--header-content
 {
 	top: 55%;
 	font-size: 1.4em;
@@ -96,12 +96,6 @@
 			background: white;
 		}
 	}
-}
-
-.front #block-block-1 .content:after
-{
-	padding-right: 100%;
-	transition: width 1s;
 }
 
 #block-locale-language
