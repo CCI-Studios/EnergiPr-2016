@@ -42,6 +42,7 @@ features[field_instance][] = node-team-body
 features[field_instance][] = node-team-field_image_team
 features[field_instance][] = node-team-field_position
 features[image][] = blog_header_image
+features[image][] = client_logo
 features[image][] = team
 features[language][] = en
 features[language][] = fr

@@ -36,6 +36,22 @@ function energipr_image_default_styles() {
     ),
   );
 
+  // Exported image style: client_logo.
+  $styles['client_logo'] = array(
+    'label' => 'Client logo',
+    'effects' => array(
+      3 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 150,
+          'height' => 90,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: team.
   $styles['team'] = array(
     'label' => 'Team',

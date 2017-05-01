@@ -17,7 +17,7 @@
 
 		.views-field-title 
 		{	
-			padding-top: 20px;
+			padding-top: 12px;
 			position: absolute;
 			width: 90%;
 			text-align: center;
@@ -36,12 +36,15 @@
 			{
 				display: block;
 				width: 150px;
+				height: 90px;
+				line-height: 90px;
 			}
 
 			img
 			{
 				max-width: 100%;
 				height: auto;
+				vertical-align: middle;
 			}
 		}
 	}
