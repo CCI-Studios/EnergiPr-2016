@@ -446,27 +446,30 @@
 
 .view-careers
 {
-	.views-field
+	.field
 	{
 		padding-bottom: 10px;
 	}
 
 	.views-row
 	{
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 
-	.views-field-title
+	.node-careers
 	{
-		color: $orange;
+		.content
+		{
+			display: none;
+		}
 	}
-
-	.views-field-nothing
+	.title
 	{
-		display: none;
+		font-size: 1.2em !important;
+		padding-bottom: 0.4em !important;
 	}
 
-	.views-field-nothing-1.open
+	.open
 	{
 		.more-details
 		{
@@ -477,11 +480,6 @@
 		{
 			display: block;
 		}
-	}
-
-	.views-label
-	{
-		font-weight: bold;
 	}
 
 	.info-button
