@@ -94,11 +94,16 @@
 	#navigation 
 	{	
 		z-index: 1;
+		
 		.region-navigation
 		{
 			float: right;
 		}
 		
+	}
+	.menu-open #navigation
+	{
+		background: white;
 	}
 
 	#logo
@@ -123,9 +128,8 @@
 	{
 		display: none;
 		position: absolute;
-		top: 0;
+		top: 100px;
 		right: 0px;
-		padding-top: 100px;
 		background: white;
 		width: 100%;
 
@@ -357,6 +361,10 @@
 	#navigation > div
 	{
 		padding: 20px 10px;
+	}
+	#block-system-main-menu
+	{
+		top: 73px;
 	}
 
 	#logo

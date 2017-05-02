@@ -27,10 +27,12 @@ body
 }
 
 #navigation
-{	
+{
 	position: absolute;
   z-index: 1;
 	width: 100%;
+  background: rgba(255,255,255,0.6);
+  transition: background 0.4s;
 
 	.region-navigation
 	{
@@ -639,18 +641,19 @@ strong
 	border-right: 7px solid #8c9b93;
 }
 
-#navigation.animateIt {
-    position:fixed;
-    top:-107px;
-    background: white;
-	z-index: 99;
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    transition:0.2s top cubic-bezier(.3, .73, .3, .74);
+#navigation.animateIt
+{
+  position:fixed;
+  top:-107px;
+  background: white;
+  z-index: 99;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  transition:0.2s top cubic-bezier(.3, .73, .3, .74);
 }
 
-body.down #navigation.animateIt {
-    top:0;
-    padding:0px;
+body.down #navigation.animateIt
+{
+  top:0;
 }
 
 #copyright
