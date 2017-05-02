@@ -6,7 +6,7 @@ core = 7.x
 scripts[] = js/background-size.js
 scripts[] = js/scroll-animation.js
 scripts[] = js/map.js
-scripts[] = js/services-toggle.js
+scripts[] = js/careers-toggle.js
 scripts[] = js/team.js
 scripts[] = js/mobile-menu.js
 
