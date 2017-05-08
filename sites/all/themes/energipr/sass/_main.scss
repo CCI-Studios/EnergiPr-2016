@@ -498,8 +498,12 @@ strong
 	{
 		@extend .layout;
 		color: white;
-		font-size: 1.3em;
 		padding: 75px 10px;
+    
+    p
+    {
+      font-size: 1.3em;
+    }
 	}
 
 	#node-3,
