@@ -3,7 +3,7 @@
 function energipr_views_pre_render(&$view) {
   if($view->name == 'front_blog') {
     global $language;
-    $view->attachment_after = l(t("View more news"),"news",array('language' => $language));
+    $view->attachment_after = l(t("View more news"),"news",array('language' => $language, 'query'=>array('page'=>'1')));
   }
 }
 
