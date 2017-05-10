@@ -30,17 +30,17 @@ function energipr_image_default_styles() {
   $styles['blog_header_image'] = array(
     'label' => 'Blog Header Image',
     'effects' => array(
-      1 => array(
-        'name' => 'manualcrop_crop_and_scale',
+      5 => array(
+        'name' => 'focal_point_scale_and_crop',
         'data' => array(
-          'width' => 940,
+          'width' => 1200,
           'height' => 450,
-          'upscale' => 0,
-          'respectminimum' => 1,
-          'onlyscaleifcrop' => 0,
-          'style_name' => 'blog_header_image',
+          'focal_point_advanced' => array(
+            'shift_x' => '',
+            'shift_y' => '',
+          ),
         ),
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
   );
@@ -65,17 +65,17 @@ function energipr_image_default_styles() {
   $styles['team'] = array(
     'label' => 'Team',
     'effects' => array(
-      2 => array(
-        'name' => 'manualcrop_crop_and_scale',
+      4 => array(
+        'name' => 'focal_point_scale_and_crop',
         'data' => array(
-          'width' => 200,
-          'height' => 200,
-          'upscale' => 0,
-          'respectminimum' => 1,
-          'onlyscaleifcrop' => 0,
-          'style_name' => 'team',
+          'width' => 250,
+          'height' => 250,
+          'focal_point_advanced' => array(
+            'shift_x' => '',
+            'shift_y' => '',
+          ),
         ),
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
   );
